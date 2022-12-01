@@ -10,7 +10,16 @@ body {
   margin: 0;
   font-family: 'Red Hat Display';
   position: relative;
-  /*****/
+  overflow: hidden important;
+
+  /***   **/
+}
+html, body{
+  height:100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
 }
 
 *,
@@ -21,8 +30,10 @@ body {
 
 .wrapper {
   max-width: 1440px;
-  max-height: 1895px;
+ 
 }
+  
+
 
 header {
   text-align: center;
@@ -32,6 +43,12 @@ header {
   margin-top: 80px;
   margin-bottom: 60px;
   color: #28283D;
+}
+.overlap-group2{
+  position:relative;
+  width:100vw;
+  height:400px;
+  overflow: hidden;
 }
 
 .oval {
@@ -272,9 +289,12 @@ a.what-is-it-btn {
 }
 
 .bitmap-1 {
-  position: absolute;
-  width: 1440px;
-  height: 308px;
+  object-fit:cover;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
 }
 
 .group-9 {
@@ -385,8 +405,9 @@ a.what-is-it-btn:hover {
 }
 
 @media (max-width:1100px) {
+  
   .wrapper {
-    width: 100%;
+    width: 100vw;
   }
 
   .section-1 {
@@ -396,6 +417,7 @@ a.what-is-it-btn:hover {
 
   .section-1- {
     justify-content: center;
+    
   }
 
   .group-3 {
@@ -416,7 +438,7 @@ a.what-is-it-btn:hover {
 
   .bitmap-1 {
     width: 100%;
-    height: 428px;
+    
   }
 
   .experience-more-together {
@@ -454,9 +476,8 @@ a.what-is-it-btn:hover {
 }
 
 @media (max-width: 700px) {
-  .wrapper {
-    width: 100%;
-  }
+
+  
 
   .mask {
     width: 55.56px;
@@ -490,7 +511,7 @@ a.what-is-it-btn:hover {
 
   .bitmap-1 {
     width: 100%;
-    height: 428px;
+    
   }
 
   .group-7 {
@@ -558,4 +579,8 @@ a.what-is-it-btn:hover {
   .btn {
     margin-bottom: 30px;
   }
+  .group-1 {
+    margin:-20px;
+  }
+
 }
